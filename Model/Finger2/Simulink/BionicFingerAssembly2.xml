@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="02/10/18||17:24:58" using="Simscape Multibody Link Version 5.0" from="SolidWorks 25.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="BionicFingerAssembly2" uid="BionicFingerAssembly2" version="990">
+<AssemblyFile name="BionicFingerAssembly2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Joint2-1" uid="Joint2-1" entityUid="Joint2*:*DIP">
+<Transform>
+<Rotation>0 0 0.99999999999999978 -0.43538825938627701 -0.90024278035904726 0 0.90024278035904726 -0.43538825938627701 0</Rotation>
+<Translation>0 0.055699999999999909 0.0012597631841978763</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerBase2-1" uid="BionicFingerBase2-1" grounded="true" entityUid="BionicFingerBase2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Joint2-2" uid="Joint2-2" entityUid="Joint2*:*PIP">
+<Transform>
+<Rotation>0 0 1 -0.9530794573500444 -0.30272024705550393 0 0.30272024705550393 -0.9530794573500444 0</Rotation>
+<Translation>0 0.021000000000000001 -0.0014382560136241146</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerMiddle2-1" uid="BionicFingerMiddle2-1" entityUid="BionicFingerMiddle2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.016999999999999911 -0.0054382560136240956</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerTip4-1" uid="BionicFingerTip4-1" entityUid="BionicFingerTip4*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.051700000000000586 -0.00074023681580187572</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0.011025507199369004 0.0040000000000000001 0.0040000000000000001</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerBase2-1</Uid>
+</InstancePath>
+<Position>0.012076248695786466 0.021000000000000001 -0.0014382560136241146</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Angle name="LimitAngle1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerTip4-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Angle>
+<Angle name="LimitAngle2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Angle>
+<Parallel name="Parallel2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0.011025507199369004 0.0040000000000000001 0.0040000000000000001</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerBase2-1</Uid>
+</InstancePath>
+<Position>0.012076248695786466 0.021000000000000001 -0.0014382560136241146</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerTip4-1</Uid>
+</InstancePath>
+<Position>-0.010005 0.0039999999999999966 0.002</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0.011025507199369004 0.038699999999999998 0.0066980191978219718</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerTip4-1</Uid>
+</InstancePath>
+<Position>-0.010005 0.0039999999999999966 0.002</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint2-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0099999999999999967</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle2-1</Uid>
+</InstancePath>
+<Position>0.011025507199369004 0.0040000000000000001 0.0040000000000000001</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint2-2</Uid>
+</InstancePath>
+<Position>0 0 -0.010999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint2-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BionicFingerBase2" uid="BionicFingerBase2*:*Default" version="1556">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerBase2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.010108273547654265</Mass>
+<CenterOfMass>4.3312101074097941e-007 6.8208811765052077e-005 -0.0014738284504417123</CenterOfMass>
+<Inertia>2.0696521969085818e-006 1.5693459478403319e-006 2.1649203274244355e-006 2.4814693431052988e-008 1.5085718098030455e-010 1.8079256582681389e-010</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerBase2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BionicFingerMiddle2" uid="BionicFingerMiddle2*:*Default" version="2990">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerMiddle2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.005615941551569568</Mass>
+<CenterOfMass>-1.5942096280369014e-007 0.019756731548913387 0.0049961441191444999</CenterOfMass>
+<Inertia>9.3836807606092836e-007 3.5413980495823228e-007 1.0234206525296385e-006 -5.907517388656685e-008 -3.4121280473279972e-013 8.5272834645433653e-011</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerMiddle2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BionicFingerTip4" uid="BionicFingerTip4*:*Default" version="3314">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerTip4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0018840259491751882</Mass>
+<CenterOfMass>-1.0155479735208733e-006 0.013076721220703134 0.0028052586984767492</CenterOfMass>
+<Inertia>1.7511084981196938e-007 9.7282032261230726e-008 2.1328043584410272e-007 -6.9065375504765471e-009 -6.8572960066180249e-012 5.557219226001452e-011</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerTip4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Joint2" uid="Joint2*:*DIP" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Joint2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.283185307179587e-005</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.1101030656611451e-009 2.1101030656611451e-009 3.1415926535897936e-011 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Joint2_DIP_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Joint2" uid="Joint2*:*PIP" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Joint2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.9115038378975458e-005</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.8049186408800875e-009 2.8049186408800875e-009 3.4557519189487727e-011 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Joint2_PIP_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

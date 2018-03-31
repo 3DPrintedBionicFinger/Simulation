@@ -1,0 +1,10 @@
+Algorithm implementation
+
+* Set G to 1, C to 0
+
+* set A = [0 w; -w 0] instead
+
+* in (5), x1 should be x2 (maybe??)
+
+* need separate internal model for each harmonic (probably need 4)
+	* 1w, 4w, 9w, etc

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/27/18||22:34:44" using="Simscape Multibody Link Version 5.0" from="SolidWorks 25.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="BionicFingerAssembly5b" uid="BionicFingerAssembly5b" version="474">
+<AssemblyFile name="BionicFingerAssembly5b.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="9271K880_MUSIC-WIRE STEEL TORSION SPRING-1" uid="9271K880_MUSIC-WIRE STEEL TORSION SPRING-1" entityUid="9271K880_MUSIC-WIRE STEEL TORSION SPRING*:*9271K88">
+<Transform>
+<Rotation>1 0 0 0 -0.10758070862256919 -0.99419635441509535 0 0.99419635441509535 -0.10758070862256919</Rotation>
+<Translation>-0.001 0.055 0.002999999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="9271K880_MUSIC-WIRE STEEL TORSION SPRING-2" uid="9271K880_MUSIC-WIRE STEEL TORSION SPRING-2" entityUid="9271K880_MUSIC-WIRE STEEL TORSION SPRING*:*9271K88">
+<Transform>
+<Rotation>1 0 0 0 -0.13258668554798536 -0.99117141343735293 0 0.99117141343735293 -0.13258668554798536</Rotation>
+<Translation>-0.002 0.022999999999999993 0.0019999999999999957</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerBase5b-1" uid="BionicFingerBase5b-1" entityUid="BionicFingerBase5b*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerTip7b-1" uid="BionicFingerTip7b-1" entityUid="BionicFingerTip7b*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.048860291390219156 0.002999999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="Joint5-2" uid="Joint5-2" entityUid="Joint5*:*PIP">
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>0 0.023 0.0019999999999999966</Translation>
+</Transform>
+</Instance>
+<Instance name="BionicFingerMiddle5b-1" uid="BionicFingerMiddle5b-1" entityUid="BionicFingerMiddle5b*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0.013999999999999723 0.0010000000000005027</Translation>
+</Transform>
+</Instance>
+<Instance name="Joint5-1" uid="Joint5-1" entityUid="Joint5*:*DIP">
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>0 0.055 0.002999999999999997</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>-0.012001099999999999 0.023 0.0019999999999999983</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>0.011001100000000002 0.0089999999999999993 0.0010000000000000013</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>-0.011000100000000007 0.041000000000000002 0.002</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerTip7b-1</Uid>
+</InstancePath>
+<Position>-0.0096958519250488553 0.0061397086097808445 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerTip7b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Angle name="LimitAngle1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Angle>
+<Angle name="LimitAngle2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerTip7b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Angle>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerMiddle5b-1</Uid>
+</InstancePath>
+<Position>-0.011000100000000007 0.041000000000000002 0.002</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint5-1</Uid>
+</InstancePath>
+<Position>0 0 -0.01</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint5-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BionicFingerBase5b-1</Uid>
+</InstancePath>
+<Position>-0.012001099999999999 0.023 0.0019999999999999983</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint5-2</Uid>
+</InstancePath>
+<Position>0 0 -0.010999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Joint5-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint5-1</Uid>
+</InstancePath>
+<Position>0 0 -0.01</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>9271K880_MUSIC-WIRE STEEL TORSION SPRING-1</Uid>
+</InstancePath>
+<Position>-0.0010117625267620834 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Joint5-2</Uid>
+</InstancePath>
+<Position>0 0 -0.010999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>9271K880_MUSIC-WIRE STEEL TORSION SPRING-2</Uid>
+</InstancePath>
+<Position>-0.0010117625267620834 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>9271K880_MUSIC-WIRE STEEL TORSION SPRING-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>9271K880_MUSIC-WIRE STEEL TORSION SPRING-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BionicFingerAssembly5b</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="9271K880_MUSIC-WIRE STEEL TORSION SPRING" uid="9271K880_MUSIC-WIRE STEEL TORSION SPRING*:*9271K88" version="145">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="9271K880_MUSIC-WIRE STEEL TORSION SPRING.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00014035712627084184</Mass>
+<CenterOfMass>0.0012064171451907969 -0.00081813983979775169 6.0364808191175702e-007</CenterOfMass>
+<Inertia>6.3162548423515674e-009 5.9710167244188776e-009 6.4812143225423684e-010 -1.6253364277497496e-013 -6.7472255514548611e-010 -2.9226618069186349e-015</Inertia>
+</MassProperties>
+<GeometryFile name="9271K880_MUSIC-WIRE STEEL TORSION SPRING_9271K88_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Specular r="0.45294117647058824" g="0.43372549019607842" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BionicFingerBase5b" uid="BionicFingerBase5b*:*Default" version="4383">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerBase5b.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0056257731904878787</Mass>
+<CenterOfMass>3.4991186844866914e-005 0.0026042823893798876 -0.00010818985088012996</CenterOfMass>
+<Inertia>1.4681010121751851e-006 1.062232272719313e-006 1.5902759907565283e-006 -3.2543350203179991e-008 3.386639188393459e-010 -3.8493128150364345e-009</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerBase5b_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BionicFingerMiddle5b" uid="BionicFingerMiddle5b*:*Default" version="6156">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerMiddle5b.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0042697675059813096</Mass>
+<CenterOfMass>-2.3793826392428047e-008 0.022304882889571311 0.0015875801449525815</CenterOfMass>
+<Inertia>9.2090492450636891e-007 3.1523577092641689e-007 9.7988685711851855e-007 -4.6825691431782519e-008 8.9511979681013683e-012 2.7161453022403281e-011</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerMiddle5b_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BionicFingerTip7b" uid="BionicFingerTip7b*:*Default" version="5344">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BionicFingerTip7b.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0020291922637518576</Mass>
+<CenterOfMass>-1.3209114519811965e-006 0.014343582300331174 0.0012782159654713549</CenterOfMass>
+<Inertia>1.9138778720033281e-007 8.8912020484815496e-008 2.0562700858920307e-007 -1.642673697765018e-008 -6.3175626066245178e-012 2.3363080940745164e-011</Inertia>
+</MassProperties>
+<GeometryFile name="BionicFingerTip7b_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Joint5" uid="Joint5*:*DIP" version="127">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Joint5.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.283185307179587e-005</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.1101030656611451e-009 2.1101030656611451e-009 3.1415926535897936e-011 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Joint5_DIP_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Joint5" uid="Joint5*:*PIP" version="127">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Joint5.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00053909729935600862</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.1878365398864681e-008 2.1878365398864681e-008 2.6954864967800428e-010 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Joint5_PIP_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
